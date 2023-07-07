@@ -32,6 +32,10 @@ dirNames        = {'baseDir','behavDir','analyzeDir','imagingDir','imagingDirRaw
 
 
 %% subject info
+
+% Read from participants .tsv file =======================
+
+
 subj_name = {'suwo04'};
 loc_AC = {-[0,0,0]};
 
@@ -45,6 +49,10 @@ subj_sess       = {sess};
 subj_runs       = {run};
 
 %% Experiment specific parameters
+
+
+% Add to participants .tsv file ===================
+
 use3D   = 0;            % in certain envinronment, using 3D image makes analysis faster
 startTR = 9; % 8245 ms was start time
 startTime = 8245;
@@ -55,6 +63,7 @@ TR      = 1000; %2720;
 trialTime   = 7000;
 planTime    = 2000;
 nSlice = 32;
+
 
 %% MAIN OPERATION =========================================================
 
