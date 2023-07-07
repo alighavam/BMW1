@@ -1,0 +1,44 @@
+function varargout = bmw1_imana(what,varargin)
+% Function for preprocessing of BMW1 data.
+% Ali Ghavampour 2023 - Diedrichsen Lab
+%
+% Project originally started 2015 by Atsushi Yokoi & Diogo Duarte
+
+addpath('tools/')
+addpath('functions/')
+
+%% Directory specification
+baseDir = '/Users/aghavampour/Desktop/Projects/BimanualWrist/BMW1/data';
+
+fieldmapsDir    = fullfile(baseDir, 'fieldmaps');dircheck(fieldmapsDir);
+behaviourDir    = fullfile(baseDir, 'behavioural_data');dircheck(behaviourDir);
+analyzeDir 		= fullfile(baseDir, 'analyze');dircheck(analyzeDir);
+anatomicalDir   = fullfile(baseDir, 'anatomicals');dircheck(anatomicalDir);
+imagingDirRaw   = fullfile(baseDir, 'imaging_data_raw');dircheck(imagingDirRaw);
+imagingDir      = fullfile(baseDir, 'imaging_data');dircheck(imagingDir);
+freesurferDir   = fullfile(baseDir, 'surfaceFreesurfer');dircheck(freesurferDir)
+caretDir        = fullfile(baseDir, 'surfaceCaret');dircheck(caretDir);
+regDir          = fullfile(baseDir, 'RegionOfInterest');dircheck(regDir);
+figDir          = fullfile(baseDir, 'figures');dircheck(figDir);
+BGDir           = fullfile(anatomicalDir,'basal_ganglia');dircheck(BGDir);
+statsDir        = fullfile(baseDir,'stats'); dircheck(statsDir);
+physioDir       = fullfile(baseDir,'physio_data'); dircheck(physioDir);
+
+dirNames        = {'baseDir','behavDir','analyzeDir','imagingDir','imagingDirRaw',...
+                   'anatomicalDir','freesurferDir','caretDir','regDir',...
+                   'physioDir','figDir','statsDir'};
+
+
+%% subject info
+subj_name = {'suwo04'};
+loc_AC = {-[0,0,0]};
+
+
+
+
+
+
+
+
+
+
