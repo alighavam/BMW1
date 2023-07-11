@@ -4,6 +4,7 @@
 *.csv
 *.pyc
 *.tgt
+*.asv
 data/
 dataframe/
 spm12/
